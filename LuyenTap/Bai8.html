@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="button" value="Choi" onclick="nhap();">
+    <script>
+        function nhap() {
+            let i=0;
+            while (i < 3) {
+                let num = parseInt(prompt("Nhap n tu 1 den 10"))
+                let r = Math.round(10 * Math.random());
+                if (num == r) {
+                    alert("Chúc mừng");
+                    break;
+                } else
+                    {if (num < r) {
+                    alert("Bé hơn : " + " Bạn thua");
+
+                    } else alert("Lớn hơn : " + "Bạn thua");
+
+                }
+                i++;
+            }
+            alert("Cho choi ket thuc")
+        }
+    </script>
+</body>
+</html>
